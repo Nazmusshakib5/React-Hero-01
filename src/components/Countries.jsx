@@ -24,17 +24,18 @@ const Countries = () => {
     return (
         <div>
             <h2> Total Countries : {country.length}</h2>
-            <div>
-                <h2>Visited Country : {viewedCountry.length}</h2>
-                <ul>
+            <h2>Visited Country : {viewedCountry.length}</h2>
+            <div className="country-container">   
                     {
-                        viewedCountry.map(item => <li key={item.cca3}>
+                        viewedCountry.map(item => <div key={item.cca3}>
                             <div className="SingleCountry visited">
                                 <h2>{item.name.common}</h2>
+                                <div >
+                                <img  src={item.flags.png} alt="" />
+                                </div>
                             </div>
-                        </li>)
+                        </div>)
                     }
-                </ul>
             </div>
             <div className="country-container">
             {country.map((item,index) => <SingleCountry
