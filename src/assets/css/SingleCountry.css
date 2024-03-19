@@ -5,3 +5,7 @@
     border-radius: 15px;
     background-color: rgb(70, 85, 93);
 }
+
+.visited{
+    background-color: rgb(30, 124, 111);
+}
