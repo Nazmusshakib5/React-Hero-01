@@ -1,1 +1,1 @@
-[live link]("https://hagubagu.surge.sh/")
+[live link](https://hagubagu.surge.sh/)
